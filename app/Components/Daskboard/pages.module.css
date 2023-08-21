@@ -1,0 +1,34 @@
+.db1 {
+  background-color: #ffffff;
+  color: #5e5873;
+  width: 100%;
+  border: none;
+}
+.db1:hover {
+  background: #f50022;
+  color: #ffffff;
+  cursor: pointer;
+}
+.db2 {
+  padding-top: 2px;
+  font-size: 15px;
+}
+
+.db3 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.db4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6b7b;
+  width: fit-content;
+}
+
+.db5 {
+  color: #b9b9c3;
+  font-size: 12px;
+}
+.db6 {
+  background-color: #b9b9c334;
+  outline: none;
+}
