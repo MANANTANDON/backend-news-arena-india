@@ -8,8 +8,9 @@ import myImage from "../../../public/Assets/me.jpeg";
 import dbStyles from "./pages.module.css";
 //extension import
 import { Button } from "../Extensions/Button";
+import { NewPost } from "./NewPost/page";
 
-export const Dashboard = () => {
+const Dashboard = () => {
   const menuItems = [
     <div className="d-flex gap-2">
       <span className="material-icons-round">home</span>
@@ -63,9 +64,9 @@ export const Dashboard = () => {
     <React.Fragment>
       <div className="container-xxl">
         <div className="row">
-          {/* Menu bar */}
-          <div className="card col-md-2 border-0 bg-transparent">
-            <div className="img-fluid mt-3 col-8">
+          {/*Left Cont: Menu bar */}
+          <div className="card col-md-3 border-0 bg-transparent">
+            <div className="img-fluid mt-3 col-7">
               <Image
                 className="card-img-top ms-2 img-fluid rounded-0"
                 src={logo}
@@ -83,8 +84,8 @@ export const Dashboard = () => {
               <Button key={key} items={item} />
             ))}
           </div>
-          {/* Nav Bar */}
-          <div className="col-md-10">
+          {/* Right Cont: Nav Bar */}
+          <div className="col-md-9">
             <div
               className={`${dbStyles.db3} my-3 rounded p-2 d-flex flex-row-reverse gap-3`}
             >
@@ -98,7 +99,7 @@ export const Dashboard = () => {
                 />
               </div>
               <div className={`${dbStyles.db4}`}>
-                <div>Manan Tandon</div>
+                <div>Manan Tandon</div> {/*logged in user */}
                 <div className={`${dbStyles.db5} text-end`}>Admin</div>
               </div>
               <a href="#" className={`${dbStyles.db4} pt-1`}>
@@ -113,9 +114,12 @@ export const Dashboard = () => {
                 </span>
               </a>
             </div>
+            <NewPost />
           </div>
         </div>
       </div>
     </React.Fragment>
   );
 };
+
+export default Dashboard;

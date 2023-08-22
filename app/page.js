@@ -2,7 +2,8 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.css";
-import { Dashboard } from "./Components/Daskboard/pages";
+import Dashboard from "./Components/Daskboard/pages";
+import Login from "./Components/Login/page";
 import "material-icons/iconfont/material-icons.css";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main>
       <Dashboard />
+      {/* <Login /> */}
     </main>
   );
 }

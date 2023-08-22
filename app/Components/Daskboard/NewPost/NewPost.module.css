@@ -1,0 +1,28 @@
+.np0 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.np1 {
+  font-size: 14px;
+  color: #6e6b7b;
+  font-weight: 600;
+}
+
+.np2 {
+  color: #6e6b7b;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.np3 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5e5873;
+}
+
+.np4 {
+  border-radius: 5px;
+  border: 1px solid #d8d6de;
+  color: #6e6b7b;
+  font-size: 14px;
+  outline: none;
+}
