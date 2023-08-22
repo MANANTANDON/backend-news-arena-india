@@ -114,6 +114,7 @@ const Dashboard = () => {
                 </span>
               </a>
             </div>
+            <div className={`my-3 fs-4 ${dbStyles.db7}`}>Add Post</div>
             <NewPost />
           </div>
         </div>

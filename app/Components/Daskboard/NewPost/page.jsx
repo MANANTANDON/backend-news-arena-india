@@ -7,7 +7,7 @@ import npStyles from "./NewPost.module.css";
 export const NewPost = () => {
   return (
     <React.Fragment>
-      <div className={`card py-3 px-2 bg-white border-0 ${npStyles.np0}`}>
+      <div className={`card p-3 bg-white border-0 ${npStyles.np0}`}>
         <div className="d-flex gap-2">
           <div>
             <Image
@@ -27,27 +27,57 @@ export const NewPost = () => {
           <div className="row row-cols-sm-1 row-cols-lg-2">
             <div className=" d-flex flex-column py-3">
               <label className={`${npStyles.np3} mb-1`}>Title</label>
-              <input type="text" className={`rounded-2 ${npStyles.np4} p-2`} />
+              <input
+                type="text"
+                className={`rounded-2 ${npStyles.np4} p-2`}
+                placeholder="4d616e616e become the CEO..."
+              />
             </div>
             <div className=" d-flex flex-column py-3">
-              <label className={`${npStyles.np3} mb-1`}>Title</label>
-              <input type="text" className={`rounded-2 ${npStyles.np4} p-2`} />
+              <label className={`${npStyles.np3} mb-1`}>Category</label>
+              <select className={`rounded-2 ${npStyles.np4} p-2 form-select`}>
+                <option defaultValue>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
             <div className="d-flex flex-column py-3">
-              <label className={`${npStyles.np3} mb-1`}>Title</label>
-              <input type="text" className={`rounded-2 ${npStyles.np4} p-2`} />
+              <label className={`${npStyles.np3} mb-1`}>Status</label>
+              <select className={`rounded-2 ${npStyles.np4} p-2 form-select`}>
+                <option defaultValue>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
             <div className=" d-flex flex-column py-3">
-              <label className={`${npStyles.np3} mb-1`}>Title</label>
-              <input type="text" className={`rounded-2 ${npStyles.np4} p-2`} />
+              <label className={`${npStyles.np3} mb-1`}>Visibility</label>
+              <select className={`rounded-2 ${npStyles.np4} p-2 form-select`}>
+                <option defaultValue>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
             <div className=" d-flex flex-column py-3">
-              <label className={`${npStyles.np3} mb-1`}>Title</label>
-              <input type="text" className={`rounded-2 ${npStyles.np4} p-2`} />
+              <label className={`${npStyles.np3} mb-1`}>Tags</label>
+              <input
+                type="text"
+                className={`rounded-2 ${npStyles.np4} p-2`}
+                placeholder="Article..."
+              />
+              <label className={`${npStyles.np5}`}>
+                Separate tags with commas...
+              </label>
             </div>
             <div className="d-flex flex-column py-3">
-              <label className={`${npStyles.np3} mb-1`}>Title</label>
-              <input type="text" className={`rounded-2 ${npStyles.np4} p-2`} />
+              <label className={`${npStyles.np3} mb-1`}>Location</label>
+              <input
+                type="text"
+                className={`rounded-2 ${npStyles.np4} p-2`}
+                placeholder="Chandigarh..."
+              />
             </div>
           </div>
         </div>

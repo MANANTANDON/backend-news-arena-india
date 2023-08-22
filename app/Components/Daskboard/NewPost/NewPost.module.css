@@ -26,3 +26,15 @@
   font-size: 14px;
   outline: none;
 }
+
+.np4::placeholder {
+  color: #d8d6de;
+  font-style: italic;
+}
+
+.np5 {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  color: #79b0f2;
+}
