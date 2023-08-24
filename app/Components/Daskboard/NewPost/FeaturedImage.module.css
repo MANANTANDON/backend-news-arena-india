@@ -1,0 +1,24 @@
+.fi1 {
+  font-size: 18px;
+}
+
+.fi2 {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.fi3 {
+  font-size: 15px;
+  color: #6e6b7b;
+}
+
+.fi4 {
+  height: 108px;
+  width: 170px;
+}
+
+.fi5 {
+  color: #b9b9c3;
+  font-size: 12px;
+}

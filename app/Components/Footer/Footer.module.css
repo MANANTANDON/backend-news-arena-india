@@ -1,0 +1,14 @@
+.tif1,
+.tif2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6b7b;
+}
+
+.tif2 {
+  color: #f50022;
+}
+
+.tif3 {
+  height: fit-content;
+}

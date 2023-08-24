@@ -9,6 +9,7 @@ import dbStyles from "./pages.module.css";
 //extension import
 import { Button } from "../Extensions/Button";
 import { NewPost } from "./NewPost/page";
+import { Footer } from "../Footer/Footer";
 
 const Dashboard = () => {
   const menuItems = [
@@ -48,15 +49,15 @@ const Dashboard = () => {
 
   const userItems = [
     <div className="d-flex gap-2">
-      <span class="material-icons-round">person_outline</span>
+      <span className="material-icons-round">person_outline</span>
       <div className={`${dbStyles.db2}`}>User</div>
     </div>,
     <div className="d-flex gap-2">
-      <span class="material-icons-round">event</span>
+      <span className="material-icons-round">event</span>
       <div className={` ${dbStyles.db2}`}>Calender</div>
     </div>,
     <div className="d-flex gap-2">
-      <span class="material-icons-round">newspaper</span>
+      <span className="material-icons-round">newspaper</span>
       <div className={` ${dbStyles.db2}`}>Newsletter</div>
     </div>,
   ];
@@ -114,10 +115,12 @@ const Dashboard = () => {
                 </span>
               </a>
             </div>
+            {/* ADD POST DESIGN */}
             <div className={`my-3 fs-4 ${dbStyles.db7}`}>Add Post</div>
             <NewPost />
           </div>
         </div>
+        <Footer />
       </div>
     </React.Fragment>
   );
