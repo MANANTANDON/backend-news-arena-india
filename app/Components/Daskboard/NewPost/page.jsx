@@ -3,11 +3,14 @@ import React from "react";
 import myImage from "../../../../public/Assets/me.jpeg";
 // styles
 import npStyles from "./NewPost.module.css";
+import { FeaturedImage } from "./FeaturedImage";
+import { Tinyeditor } from "../../TinyEditor/Tinyeditor";
+//Tiny
 
 export const NewPost = () => {
   return (
     <React.Fragment>
-      <div className={`card p-3 bg-white border-0 ${npStyles.np0}`}>
+      <div className={`card p-3 bg-white border-0 ${npStyles.np0} mb-4`}>
         <div className="d-flex gap-2">
           <div>
             <Image
@@ -79,6 +82,20 @@ export const NewPost = () => {
                 placeholder="Chandigarh..."
               />
             </div>
+          </div>
+          <div className="d-flex flex-column">
+            <label className={`${npStyles.np3} mb-1`}>Content</label>
+            <Tinyeditor />
+          </div>
+          {/* Featured Image card */}
+          <FeaturedImage />
+          <div className="d-flex flex-column">
+            <label className={`${npStyles.np3} mb-1`}>Instagram</label>
+            <Tinyeditor />
+          </div>
+          <div className="col d-flex gap-2 my-3">
+            <button className={`btn ${npStyles.np7}`}>Publish</button>
+            <button className={`btn ${npStyles.np8}`}>Cancel</button>
           </div>
         </div>
       </div>

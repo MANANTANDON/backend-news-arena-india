@@ -38,3 +38,23 @@
   font-weight: 400;
   color: #79b0f2;
 }
+
+/* .np6 {
+  height: 100px;
+} */
+
+.np7 {
+  background-color: #f50022;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.np7:hover,
+.np8,
+.np8:hover {
+  border: 1px solid #f50022;
+  color: #f50022;
+  font-size: 14px;
+  font-weight: 400;
+}
